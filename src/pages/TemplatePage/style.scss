@@ -1,0 +1,62 @@
+@import "../../variables.scss";
+
+.template-page {
+  background-color: $black;
+  padding: 2rem 6rem;
+
+  .head {
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      color: $white;
+      font-size: 2.4rem;
+      font-weight: 500;
+    }
+  }
+
+  .template-footer {
+    display: flex;
+    height: 50rem;
+    gap: 3.2rem;
+
+    .left {
+      flex: 1;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        color: $primary;
+        text-align: center;
+        font-size: 3.6rem;
+        font-weight: 700;
+      }
+
+      .premium-features {
+        color: $white;
+        // margin-left: 3.2rem;
+
+        .feature-item {
+          display: flex;
+          align-items: center;
+          gap: 0.8rem;
+          margin: 2rem 0;
+
+          .text {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@import "../../variables.scss";
+
+.activities-page {
+  background-color: $black;
+  padding: 4rem 6rem;
+  display: flex;
+
+  .left {
+    flex: 4;
+    min-width: 500px;
+    margin-right: 4rem;
+  }
+
+  .infulencer {
+    & > .title {
+      color: $white;
+      margin-bottom: 2rem;
+      font-size: 2.4rem;
+      font-weight: 500;
+    }
+  }
+
+  .right {
+    flex: 1;
+    padding: 2.4rem 0 0 2rem;
+    background-color: #eee;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+
+    &-title {
+      font-size: 2.4rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+
+    .creators {
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+      .creator {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        color: $black;
+        .num {
+          font-size: 2em;
+          font-weight: 500;
+        }
+
+        &-avatar {
+          width: 4rem;
+          height: 4rem;
+          border-radius: 50%;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+        }
+
+        &-name {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
