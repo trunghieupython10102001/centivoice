@@ -1,7 +1,7 @@
 const routes = [
   {
     name: 'Trang chủ',
-    path: 'home',
+    path: '',
   },
   {
     name: 'Mẫu',
